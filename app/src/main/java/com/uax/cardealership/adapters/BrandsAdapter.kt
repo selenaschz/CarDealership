@@ -12,11 +12,11 @@ import com.uax.cardealership.models.Brand
 
 class BrandsAdapter(var brandList: ArrayList<Brand>, var context: Context) : BaseAdapter() {
     override fun getCount(): Int {
-        return carList.size
+        return brandList.size
     }
 
     override fun getItem(p0: Int): Any {
-        return carList[p0]
+        return brandList[p0]
     }
 
     override fun getItemId(p0: Int): Long {
@@ -35,7 +35,7 @@ class BrandsAdapter(var brandList: ArrayList<Brand>, var context: Context) : Bas
         val brand: Brand = brandList[p0]
         image.setImageResource( brand.logo )
         text.text = brand.name
-        
+
         return view;
     }
 }
