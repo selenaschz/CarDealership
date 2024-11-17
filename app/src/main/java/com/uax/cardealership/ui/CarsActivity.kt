@@ -19,4 +19,15 @@ class CarsActivity : AppCompatActivity() {
 
     }
 
+    private fun instances() {
+        brandsList = arrayListOf(
+            Brand("Mercedes", R.drawable.mercedes ),
+            Brand("BMW", R.drawable.bmw ),
+            Brand("Ford", R.drawable.ford ),
+            Brand("BYD", R.drawable.byd ),
+            Brand("Audi", R.drawable.audi ),
+            Brand("Peugeot", R.drawable.peugeot )
+        )
+    }
+
 }
