@@ -15,7 +15,7 @@ class BrandsAdapter(var brandList: ArrayList<Brand>, var context: Context) : Bas
         return brandList.size
     }
 
-    override fun getItem(p0: Int): Any {
+    override fun getItem(p0: Int): Brand {
         return brandList[p0]
     }
 
